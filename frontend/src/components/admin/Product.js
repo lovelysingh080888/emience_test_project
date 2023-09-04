@@ -7,7 +7,6 @@ export const Product = () => {
 
   const getProducts = async () => {
     const result = await getProductService();
-    console.log(result);
     if (result.status) setProducts(result.data);
   };
   useEffect(() => {
